@@ -9,7 +9,7 @@ body{
 .container{
   justify-content: center;
   margin-top: 100px;
-  border: 2px solid white;
+  
   display: grid;
   grid-template-columns: repeat(4, 300px);
   grid-template-rows: repeat(3, 100px);
@@ -46,14 +46,27 @@ body{
     border-radius: 50px;
 }
 @media (max-width: 786px) {
-    .container{
-  justify-content: center;
-  margin-top: 100px;
-  border: 2px solid white;
-  display: grid;
-  grid-template-columns: repeat(1, 200px);
-  grid-template-rows: repeat(5, 100px);
-  flex-wrap: wrap;
-  gap: 10px;
+  .container{
+    justify-content: center;
+    margin-top: 100px;
+  
+    display: grid;
+    grid-template-columns: repeat(1, 200px);
+    grid-template-rows: repeat(5, 100px);
+    flex-wrap: wrap;
+    gap: 10px;
+ }
 }
-}
+   button {
+    width: 90px;
+    height: 70px;
+    border: 2px solid white;
+    background-color: rgb(212, 245, 247);
+    border-radius: 50px;
+  }
+  button :hover{
+    width: 90px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: lightpink;
+  }

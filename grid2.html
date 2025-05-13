@@ -14,17 +14,13 @@
     background-color: gray;
   }
   .container{
-    /* height: 500px; */
-    border: 2px solid white;
     display: grid;
     grid-template-columns: repeat(3, 30vh);
-    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
     flex-wrap: wrap;
     gap: 20px;
-    /* display: flex; */
     justify-content: center;
-    /* align-items: center; */
-    
+    margin-top: 50px;
   }
   .child-1{
     border: 2px solid white;
@@ -67,13 +63,30 @@
   .bc-6 {
     background-color: aqua;
   }
-  button {
+   button {
     width: 90px;
     height: 70px;
     border: 2px solid white;
     background-color: rgb(212, 245, 247);
     border-radius: 50px;
   }
+  button :hover{
+    width: 90px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: lightpink;
+  }
+  @media (max-width: 786px) {
+  .container{
+    display: grid;
+    grid-template-columns: repeat(2, 30vh);
+    grid-template-rows: repeat(3, 200px);
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+ }
+}
     </style>
 </head>
 <body>
@@ -90,16 +103,14 @@
 	<div class="child-1 bc-4"id="child-4">
 		box4
 	</div>
-	<!-- <div class="child-1 bc-5"id="child-5">
-		box5
 	</div>
-	<div class="child-1 bc-6"id="child-6">
-		box6
-	</div> -->
+     <div style="display: flex; justify-content: space-around; margin-top: 50px;">
+    <div>
+		<button><a href="./index.html">Back</a></button>
+	</div>
 	<div>
-		<button><a href="">Next</a></button>
+		<button><a href="./grid3.html">Next</a></button>
 	</div>
 	</div>
-
 </body>
 </html>

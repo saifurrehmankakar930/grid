@@ -10,7 +10,6 @@
     display: grid;
     grid-template-columns: repeat(6, 150px);
     grid-template-rows: repeat(3, 150px);
-    border: 2px solid white;
     justify-content: center;
     margin-top: 90px;
     gap: 10px;
@@ -63,4 +62,27 @@
   .bg-10{
     background-color: brown;
 
+  }
+   @media (max-width: 786px) {
+    .container{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(6, 150px);
+    justify-content: center;
+    margin-top: 90px;
+    gap: 10px;
+}
+}
+   button {
+    width: 90px;
+    height: 70px;
+    border: 2px solid white;
+    background-color: rgb(212, 245, 247);
+    border-radius: 50px;
+  }
+  button :hover{
+    width: 90px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: lightpink;
   }
